@@ -1,0 +1,11 @@
+package com.example.project.repository;
+
+import com.example.project.domain.items.Item;
+import com.example.project.domain.items.ItemRepositoryCustom;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
+
+public interface ItemRepository extends JpaRepository<Item, Long>,
+    QuerydslPredicateExecutor<Item>, ItemRepositoryCustom {
+
+}

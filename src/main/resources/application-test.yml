@@ -1,0 +1,26 @@
+spring:
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  main:
+    allow-circular-references: true
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+    show-sql: true
+
+itemImglocation: /Users/woori/projects/project/shop/item # C:/shop/item
+uploadPath: file:///Users/woori/projects/project/shop/  #file:///C:/shop/

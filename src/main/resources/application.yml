@@ -1,0 +1,31 @@
+server:
+  port: 80
+
+---
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project
+    username: root
+    password: 1234
+  main:
+    allow-circular-references: true
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+    show-sql: true
+
+itemImgLocation: /Users/woori/shop/item # C:/shop/item
+uploadPath: file:///Users/woori/shop/  #file:///C:/shop/
+---
+
+
+
